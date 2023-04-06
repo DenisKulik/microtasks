@@ -1,4 +1,4 @@
-import Cars from './Cars';
+import Cars from '../microtask_2/Cars';
 
 type BodyType = {
     titleForBody: string
@@ -13,8 +13,8 @@ const Body = ({ titleForBody }: BodyType) => {
 
     return (
         <>
-            <div>{titleForBody}</div>
-            <Cars cars={topCars} />
+            <div>{ titleForBody }</div>
+            <Cars cars={ topCars } />
         </>
 
     );

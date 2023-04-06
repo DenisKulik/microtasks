@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './components/Header';
-import Body from './components/Body';
-import Button from './components/Button';
-import Money from './components/Money';
+import Header from './components/microtask_4/Header';
+import Body from './components/microtask_1/Body';
+import Button from './components/microtask_3/Button';
+import Money from './components/microtask_5/Money';
 import Messages from './components/microtask_6/Messages';
 
 function App() {
