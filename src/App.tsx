@@ -50,14 +50,14 @@ const App = () => {
 
     function removeTask(id: string, todolistID: string) {
         const filteredTasks = tasks[todolistID].filter(t => t.id !== id);
-        setTasks({ ...tasks, todolistID: filteredTasks });
+        setTasks({ ...tasks, [todolistID]: filteredTasks });
     }
 
     function addTask(title: string, todolistID: string) {
         const task = { id: v1(), title: title, isDone: false };
         const newTasks = {
             ...tasks,
-            todolistID: [ task, ...tasks[todolistID] ]
+            [todolistID]: [ task, ...tasks[todolistID] ]
         };
         setTasks(newTasks);
     }
